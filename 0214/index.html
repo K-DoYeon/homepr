@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        function changecolor(){
+            let arrColor = ["#ff0","#6c0", "#fcf", "#cf0", "#39f"]
+            let Num = Math.floor( Math.random()*arrColor.length);
+            document.getElementById('color').style.backgroundColor = arrColor[Num];
+        };
+
+    </script>
+</head>
+<body id = "color">
+    <!-- 1. 버튼을 클릭할 때마다 함수가 실행되어(#ff0, #6c0, #fcf, #cf0, #39f)의 색상 중 1개가 랜덤으로 선택되어
+            바탕화면의 색상이 바뀌도록 하세요-->
+    
+        <button onclick="changecolor()">색깔 바꾸기</button>
+</body>
+</html>

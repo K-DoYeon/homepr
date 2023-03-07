@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 1.
+    <p id="demo"></p> -->
+    <!-- 2. -->
+    <p class="now">지금 시간은 <span id = "now">00시 00분 00초</span>입니다.</p>
+
+
+    <script>
+
+        /* 1.
+        setInterval(myTimer, 1000);
+
+        function myTimer() {
+        const d = new Date();
+        document.getElementById("demo").innerHTML = d.toLocaleTimeString();
+        } */
+
+        //2.
+        setInterval(mytime,1000);
+
+            function mytime(){
+            const dt = new Date();
+            const nh = dt.getHours();
+            const nm = dt.getMinutes();
+            const ns = dt.getSeconds();
+            const nd = nh + "시" + nm + "분" + ns + "초" ;
+
+            document.getElementById("now").innerHTML = nd;
+        }
+
+    </script>
+    
+</body>
+</html>

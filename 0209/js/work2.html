@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 1.
+    <button type="button" onclick="parentpage()">누르시오</button> -->
+    
+    <!-- 2. -->
+    <button type="button" onclick="parent()">누르시오.</button>
+    <script>
+    /* 1.
+        function parentpage(){
+            document.write("누르셨군요")
+        } */
+
+    //2.
+    function parent(){
+        window.open("work3.html", "parent", "width = 400, height = 300, left = 100, top = 100");
+    }
+    </script>
+</body>
+</html>

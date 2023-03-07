@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자바스크립스트로 색상 바꾸기</title>
+</head>
+<body>
+    <div>
+        <ul class="meun" id="meun1">
+            <li>김밥</li>
+            <li>비빔밥</li>
+            <li>제육덮밥</li>
+            <li>오징어덮밥</li>
+            <li>돌솥밥</li>
+        </ul>
+
+        <ul class="meun" id="meun2">
+            <li>자라탕</li>
+            <li>감자탕</li>
+            <li>오리탕</li>
+            <li>닭백숙</li>
+            <li>추어탕</li>
+        </ul>
+    </div>
+    <script>
+        window.onload = function(){
+            //먼저 아이디 선택자가 메뉴2를 찾는다
+            var meun2 = document.getElementById("meun2");
+            //ul태그 메뉴2선택자 하위 요소인 li태그를 배열로 저장을 하고 있다.
+            var liArrays = meun2.getElementsByTagName("li");
+            for(var i = 0; i<liArrays.length; i++){
+                var li = liArrays[i];
+                li.style.color = "blue";
+            }
+        }
+    </script>
+</body>
+</html>
